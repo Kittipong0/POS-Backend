@@ -1,0 +1,11 @@
+C:\MiniProjectByAi\POS Backend\POS.Common\bin\Debug\net9.0\POS.Common.deps.json
+C:\MiniProjectByAi\POS Backend\POS.Common\bin\Debug\net9.0\POS.Common.dll
+C:\MiniProjectByAi\POS Backend\POS.Common\bin\Debug\net9.0\POS.Common.pdb
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.AssemblyInfoInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.AssemblyInfo.cs
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.csproj.CoreCompileInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.dll
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\refint\POS.Common.dll
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.pdb
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\ref\POS.Common.dll

@@ -1,0 +1,15 @@
+C:\MiniProjectByAi\POS Backend\POS.Domain\bin\Debug\net9.0\POS.Domain.deps.json
+C:\MiniProjectByAi\POS Backend\POS.Domain\bin\Debug\net9.0\POS.Domain.dll
+C:\MiniProjectByAi\POS Backend\POS.Domain\bin\Debug\net9.0\POS.Domain.pdb
+C:\MiniProjectByAi\POS Backend\POS.Domain\bin\Debug\net9.0\POS.Common.dll
+C:\MiniProjectByAi\POS Backend\POS.Domain\bin\Debug\net9.0\POS.Common.pdb
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.csproj.AssemblyReference.cache
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.AssemblyInfoInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.AssemblyInfo.cs
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.csproj.CoreCompileInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.csproj.Up2Date
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.dll
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\refint\POS.Domain.dll
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\POS.Domain.pdb
+C:\MiniProjectByAi\POS Backend\POS.Domain\obj\Debug\net9.0\ref\POS.Domain.dll

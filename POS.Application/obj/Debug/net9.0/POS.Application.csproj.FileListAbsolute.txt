@@ -1,8 +1,3 @@
-C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.csproj.AssemblyReference.cache
-C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.AssemblyInfoInputs.cache
-C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.AssemblyInfo.cs
-C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.csproj.CoreCompileInputs.cache
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Application.deps.json
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Application.dll
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Application.pdb
@@ -12,6 +7,12 @@ C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Infrastructu
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Domain.pdb
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Infrastructure.pdb
 C:\MiniProjectByAi\POS Backend\POS.Application\bin\Debug\net9.0\POS.Common.pdb
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.csproj.AssemblyReference.cache
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.AssemblyInfoInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.AssemblyInfo.cs
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.csproj.CoreCompileInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.sourcelink.json
 C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Appl.B41D5806.Up2Date
 C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\POS.Application.dll
 C:\MiniProjectByAi\POS Backend\POS.Application\obj\Debug\net9.0\refint\POS.Application.dll

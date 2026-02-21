@@ -9,6 +9,10 @@ public class AppDbContext : DbContext
     {
     }
 
+    protected AppDbContext(DbContextOptions options) : base(options)
+    {
+    }
+
     public DbSet<Order> Orders { get; set; }
     public DbSet<OrderItem> OrderItems { get; set; }
     public DbSet<MenuItem> MenuItems { get; set; }

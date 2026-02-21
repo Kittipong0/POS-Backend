@@ -5,6 +5,7 @@ C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.GeneratedM
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.AssemblyInfoInputs.cache
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.AssemblyInfo.cs
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.csproj.CoreCompileInputs.cache
+C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.sourcelink.json
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.dll
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\refint\POS.Common.dll
 C:\MiniProjectByAi\POS Backend\POS.Common\obj\Debug\net9.0\POS.Common.pdb

@@ -5,20 +5,24 @@ using POS.Infrastructure.Repositories.Interfaces;
 
 namespace POS.Infrastructure.Repositories
 {
-    public class OrderRepository : IOrderRepository
+    public class OrderRepository : BaseRepository<Order>, IOrderRepository
     {
-        private readonly AppDbContext _writeContext;
-        private readonly AppReadDbContext _readContext;
-
         public OrderRepository(AppDbContext writeContext, AppReadDbContext readContext)
+            : base(writeContext, readContext)
         {
-            _writeContext = writeContext;
-            _readContext = readContext;
         }
 
-        public Order? GetById(int id)
+        public override IEnumerable<Order> GetAll()
         {
             return _readContext.Orders
+                .Include(o => o.Items)
+                .AsNoTracking()
+                .ToList();
+        }
+
+        public override Order? GetById(int id)
+        {
+            return _writeContext.Orders
                 .Include(o => o.Items)
                 .FirstOrDefault(o => o.Id == id);
         }
@@ -27,13 +31,40 @@ namespace POS.Infrastructure.Repositories
         {
             return _readContext.Orders
                 .Include(o => o.Items)
-                .Where(o => o.Status == Domain.Enums.OrderStatus.Pending || o.Status == Domain.Enums.OrderStatus.Cooking)
+                .AsNoTracking()
+                .Where(o => o.Status == Domain.Enums.OrderStatus.Pending
+                         || o.Status == Domain.Enums.OrderStatus.Preparing
+                         || o.Status == Domain.Enums.OrderStatus.Cooking)
                 .ToList();
         }
 
-        public void Add(Order order)
+        public IEnumerable<Order> GetByTableId(int tableId)
         {
-            _writeContext.Orders.Add(order);
+            return _writeContext.Orders
+                .Include(o => o.Items)
+                .Where(o => o.TableId == tableId)
+                .OrderByDescending(o => o.OrderDate)
+                .ToList();
+        }
+
+        public OrderItem? GetOrderItemById(int id)
+        {
+            return _readContext.OrderItems
+                .AsNoTracking()
+                .FirstOrDefault(oi => oi.Id == id);
+        }
+
+        public void UpdateOrderItem(OrderItem item)
+        {
+            var existing = _writeContext.OrderItems.Local.FirstOrDefault(e => e.Id == item.Id);
+            if (existing != null)
+            {
+                _writeContext.Entry(existing).CurrentValues.SetValues(item);
+            }
+            else
+            {
+                _writeContext.Entry(item).State = EntityState.Modified;
+            }
         }
     }
 }

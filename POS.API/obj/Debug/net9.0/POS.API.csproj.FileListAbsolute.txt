@@ -166,4 +166,5 @@ C:\MiniProjectByAi\POS Backend\POS.API\obj\Debug\net9.0\POS.API.xml
 C:\MiniProjectByAi\POS Backend\POS.API\obj\Debug\net9.0\POS.API.pdb
 C:\MiniProjectByAi\POS Backend\POS.API\obj\Debug\net9.0\POS.API.genruntimeconfig.cache
 C:\MiniProjectByAi\POS Backend\POS.API\obj\Debug\net9.0\ref\POS.API.dll
-C:\MiniProjectByAi\POS Backend\POS.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\MiniProjectByAi\POS Backend\POS.API\bin\Debug\net9.0\System.Net.Http.WinHttpHandler.dll
+C:\MiniProjectByAi\POS Backend\POS.API\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Net.Http.WinHttpHandler.dll

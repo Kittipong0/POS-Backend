@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddSignalR();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -54,19 +55,37 @@ builder.Services.AddSwaggerGen(options =>
 // Register custom dependencies
 builder.Services.RegisterDependencies(builder.Configuration);
 
+// Add CORS Policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularFrontend",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        });
+});
+
 var app = builder.Build();
+
+app.UsePathBase("/POSAPI");
+
+// Use CORS (Must be before MapControllers)
+app.UseCors("AllowAngularFrontend");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger(options =>
     {
-        options.RouteTemplate = "POSAPI/api/swagger/{documentName}/swagger.json";
+        options.RouteTemplate = "api/swagger/{documentName}/swagger.json";
     });
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/POSAPI/api/swagger/v1/swagger.json", "POS API v1");
-        options.RoutePrefix = "POSAPI/api/swagger";
+        options.RoutePrefix = "api/swagger";
     });
 }
 
@@ -77,5 +96,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHub<POS.Infrastructure.SignalR.OrderHub>("/restaurantHub");
 
 app.Run();

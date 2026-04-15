@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4FVtKy+fM58=",
+  "dgSpecHash": "zV989TMwqr0=",
   "success": true,
   "projectFilePath": "C:\\MiniProjectByAi\\POS Backend\\POS.API\\POS.API.csproj",
   "expectedPackageFiles": [
@@ -72,6 +72,7 @@
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.net.http.winhttphandler\\10.0.3\\system.net.http.winhttphandler.10.0.3.nupkg.sha512",
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\kittipong.sittikan\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",

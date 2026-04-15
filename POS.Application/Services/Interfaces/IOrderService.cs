@@ -1,4 +1,4 @@
-using POS.Application.Models;
+using POS.Application.Models.Orders;
 
 namespace POS.Application.Services.Interfaces
 {

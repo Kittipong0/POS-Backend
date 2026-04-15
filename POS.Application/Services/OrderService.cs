@@ -1,4 +1,4 @@
-using POS.Application.Models;
+using POS.Application.Models.Orders;
 using POS.Domain.Entities;
 using POS.Domain.Enums;
 using POS.Infrastructure.Repositories.Interfaces;
@@ -70,7 +70,8 @@ public class OrderService : IOrderService
                 MenuItemId = i.MenuItemId,
                 MenuItemName = menuItems.TryGetValue(i.MenuItemId, out var m) ? m.Name : "Unknown",
                 Quantity = i.Quantity,
-                UnitPrice = i.UnitPrice
+                UnitPrice = i.UnitPrice,
+                Status = i.Status
             }).ToList()
         };
     }

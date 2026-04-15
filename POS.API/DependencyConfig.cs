@@ -6,6 +6,7 @@ using POS.Application.Services.Interfaces;
 using POS.Infrastructure.Data;
 using POS.Infrastructure.Repositories;
 using POS.Infrastructure.Repositories.Interfaces;
+using POS.Infrastructure.Services.Interfaces;
 
 namespace POS.API;
 
@@ -27,6 +28,19 @@ public static class DependencyConfig
 
         // Services
         services.AddScoped<IOrderService, OrderService>();
+        services.AddScoped<ICustomerService, CustomerService>();
+        services.AddScoped<IStaffService, StaffService>();
+        services.AddScoped<IChefService, ChefService>();
+        
+        // AI Services - Use WinHttpHandler (native Windows HTTP stack, same as curl.exe)
+        // This resolves SSL connection aborts caused by local security software
+        // intercepting .NET's managed SocketsHttpHandler
+        services.AddHttpClient<IAiService, POS.Infrastructure.Services.GeminiService>()
+            .ConfigurePrimaryHttpMessageHandler(() => new System.Net.Http.WinHttpHandler
+            {
+                ServerCertificateValidationCallback = (message, cert, chain, errors) => true,
+                WindowsProxyUsePolicy = System.Net.Http.WindowsProxyUsePolicy.DoNotUseProxy
+            });
     }
 }
 

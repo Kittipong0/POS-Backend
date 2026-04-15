@@ -3,8 +3,10 @@ namespace POS.Domain.Enums;
 public enum OrderStatus
 {
     Pending,
+    Preparing,
     Cooking,
-    Done,
+    ReadyToServe,
     Served,
+    Completed,
     Cancelled
 }

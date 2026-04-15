@@ -2,10 +2,11 @@ using POS.Domain.Entities;
 
 namespace POS.Infrastructure.Repositories.Interfaces
 {
-    public interface IOrderRepository
+    public interface IOrderRepository : IBaseRepository<Order>
     {
-        Order? GetById(int id);
         IEnumerable<Order> GetActiveOrders();
-        void Add(Order order);
+        IEnumerable<Order> GetByTableId(int tableId);
+        OrderItem? GetOrderItemById(int id);
+        void UpdateOrderItem(OrderItem item);
     }
 }
